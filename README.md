@@ -4,12 +4,17 @@ A demonstration of real-time analytics and visualization of E-commerce data usin
 In this project, with the help of kafka and dash I conducted real-time data analysis and visualization on big data downloaded from https://www.kaggle.com/podsyp/how-to-do-product-analytics with size of 1.19 GB
 
 I designed my ecommerce site architecture around the schema of the product dataset. Product dataset is basically about Ads that are shown about products of different categories like clothes, accessories,sneakers etc and it notes the event that is done by the user under the column name "title"
+
 There are basically three types of events:
 1) Banner-show
 2) Banner-click
-3) Order
-Overall Architecture:
+3) order
+
+
+Overall Architecture: <br>
 Web app->kafka producer->kafka consumer-> postgresql->dash
+
+![Image of Architecture](https://github.com/chelseafernandes2000/RealTimeBigDataAnalytics/blob/master/architecture.JPG)
 
 In order to show the flow of data from the real site to create real time dashboard, i created a webapp acting as the source of my real-time data. I used flask to create this, as the architecture of this webapp is based of the dataset which in turn is based on three main events I decided the flow like this:
 
@@ -45,6 +50,7 @@ I've used kafka as it can instantly publish the new data generated and my kafka 
 I've used Spark (pyspark.sql) for exploratory analysis on dataset, to find out number of rows, top user, top products etc. The reason of using spark for this is as my dataset is big pandas wouldnt be able to handle it efficiently. Also, spark distributes the data over multiple clusters which helps to manage time very efficiently.
 
 Each record that's been generated through web app will be sent to postgrsql database where the product dataset is already stored. 
+
 
 At the end, I used dash to visualize the analysis done such as live count of orders, banner_click and banner_show for each day that updates itself every minute and refreshes every day at midnight. Also, a real time scatter plot of the numbers of orders over time along with the product categories. And a simple pie-chart of Number of prople using desktop and mobile version for 2019 data.
 
