@@ -55,5 +55,10 @@ Before sending to postgresql database, you can perform more analytics or cleanin
 
 At the end, I used dash to visualize the analysis done such as live count of orders, banner_click and banner_show for each day that updates itself every minute and refreshes every day at midnight. Also, a real time scatter plot of the numbers of orders over time along with the product categories. And a simple pie-chart of Number of prople using desktop and mobile version for 2019 data.
 
+Ouput Video:
+<video width="320" height="240" controls>
+  <source src="" type="video/mp4">
+</video>
+
 
 
