@@ -51,7 +51,9 @@ I've used Spark (pyspark.sql) for exploratory analysis on dataset, to find out n
 
 Each record that's been generated through web app will be sent to postgrsql database where the product dataset is already stored. 
 
+Before sending to postgresql database, you can perform more analytics or cleaning using spark. Since my data was already clean i ddidnt do any. 
 
 At the end, I used dash to visualize the analysis done such as live count of orders, banner_click and banner_show for each day that updates itself every minute and refreshes every day at midnight. Also, a real time scatter plot of the numbers of orders over time along with the product categories. And a simple pie-chart of Number of prople using desktop and mobile version for 2019 data.
+
 
 
