@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  
+  box-sizing: border-box;
+}
+.menu {
+ background-color:goldenrod;
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  background-color:teal;
+  float: left;
+  height: 100%;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>Chelsea's E-commerce Site</h1>
+  <h3><i>Best place to buy Clothes, Accessories, Sneakers, Electronics and Sports Nutrition</i></h3>
+  <a href="http://127.0.0.1:5000/">
+    <img src="static/images/meanlove.jpg">
+  </a>
+  
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Clothes</div>
+    <div class="menuitem">Accessories</div>
+    <div class="menuitem">Sneakers</div>
+    <div class="menuitem">Electronics</div>
+    <div class="menuitem">Sports Nutrition</div>
+    <img src="static/images/ad.jpg" style="width:100%" height="600"> 
+  </div>
+
+  <div class="main">
+   <center>
+   <img src="static/images/menu-bar.jpg" style="width:100%">
+    <h2 style="color:red;"> Your Order {{product}} is Confirmed!</h2>
+    
+    <img src="{{img1}}" style="height: 400px;
+      width: 600px;">
+    <img src="static/images/payment.jpg">
+    </center>
+  </div>
+
+  <div class="right">
+    
+    <h2>What?</h2>
+    <p>A demonstration webapp for real-time advertisment big data analytics using spark,cassandra and kafka with superset dashboard.</p>
+    <h2>Where?</h2>
+    <p>Well you have come to the final page and completed the final event "order" with target=1</p>
+    <h2>Then?</h2>
+    <p>I hope you were able to view real time visualizations of your activity related to ads of different category. Thats's all for now, Thank you!</p>
+  </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+</body>
+</html>
