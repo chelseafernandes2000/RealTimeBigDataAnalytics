@@ -60,4 +60,4 @@ Ouput Video: <br>
 
 
 
-<a src="https://drive.google.com/file/d/1cYub0vRQRzAEGy8GlkoT60zhfKMFlXyS/view?usp=sharing"> Click to see full video if GIF is lagging. </a>
+[Click to see full video if GIF is lagging](https://drive.google.com/file/d/1cYub0vRQRzAEGy8GlkoT60zhfKMFlXyS/view?usp=sharing) 
