@@ -57,7 +57,7 @@ At the end, I used dash to visualize the analysis done such as live count of ord
 
 Ouput Video:
 <video width="320" height="240" controls>
-  <source src="" type="video/mp4">
+  <source src="https://github.com/chelseafernandes2000/RealTimeBigDataAnalytics/blob/master/RealtimeAnalyticsOutput.mp4" type="video/mp4">
 </video>
 
 
